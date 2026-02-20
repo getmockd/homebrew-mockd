@@ -1,26 +1,26 @@
 class Mockd < Formula
   desc "High-performance multi-protocol API mocking server"
   homepage "https://mockd.io"
-  version "0.2.9"
+  version "0.3.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/getmockd/mockd/releases/download/v#{version}/mockd-darwin-arm64"
-      sha256 "d69cbe1c33b8a2f12860939e4dc90b9e6def7181e2c543c742253e88f759b9bb"
+      sha256 "f8eb10dadfeb9878cc457381fe5d2b6070ef30fe6da700549b6f9e9aa5015107"
     else
       url "https://github.com/getmockd/mockd/releases/download/v#{version}/mockd-darwin-amd64"
-      sha256 "05b10ae677c09a8c761efb7d2f8413d41cd8e65469c426bde728bba629ccba7e"
+      sha256 "50b39fd6ed6d577f6abf56da739d95defdfe29e4e0a01a4772eb4513ac4a84f1"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/getmockd/mockd/releases/download/v#{version}/mockd-linux-arm64"
-      sha256 "7077b4d28302a1da27711bd1c67944d4b342cc918abe360c1aeca85c21b58145"
+      sha256 "b92a63c6b1947e9a4531f73c386ac1762e64f745d4678cb94ef98ac039d50796"
     else
       url "https://github.com/getmockd/mockd/releases/download/v#{version}/mockd-linux-amd64"
-      sha256 "223c1645c64cdfcd680ef22f2537571ccc06a2284c03ec5fd28116843bf0aa85"
+      sha256 "ea073f240bbd625e8ea35610d39e5569b93e85bddfb8dd467a3fcf63c5c1ae83"
     end
   end
 
